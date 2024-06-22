@@ -1,0 +1,140 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 70vw;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.error {
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.additional-questions {
+    margin-top: 20px;
+}
+
+.additional-questions h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.submitted-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-data-data {
+    margin: 10px;
+}
+
+.submitted-data p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.submitted-data h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+    }
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .submitted-data p {
+        font-size: 14px;
+    }
+}
